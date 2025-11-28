@@ -1,0 +1,20 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  /* Custom component classes can go here */
+  .btn-primary {
+    @apply bg-navy-light text-white font-bold py-3 px-8 rounded-lg 
+           hover:bg-navy-dark transition-all duration-300 
+           hover:scale-105 hover:shadow-xl;
+  }
+}
